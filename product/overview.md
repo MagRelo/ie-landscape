@@ -79,5 +79,5 @@ referralTree is an auditable multilevel **split substrate** plus an agent-readab
 
 ## Known limits
 - Geometric splits are not Sybil-proof; protection is oracle policy + skiplist + health scoring.
-- The oracle is the main trust point (audit PR #10, informational notes).
-- Fee-on-transfer and rebasing tokens aren't specially handled (audit PR #10, lows).
+- The oracle is the main trust point (automated audit report, referralTree PR #10, closed unmerged; informational notes).
+- Fee-on-transfer and rebasing tokens aren't specially handled (same report, lows).
