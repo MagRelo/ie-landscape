@@ -20,3 +20,5 @@ The canonical catalog is referralTree's [docs/theory/graph-topologies.md](https:
 | 12 | Pyramid optics | Deep, narrow, recruitment-funded | depth vs. branching; funding source | Disclose / delist | Vander Nat & Keep |
 
 **Defense layers:** (1) oracle registration policy is the attack-edge gate (Douceur); (2) skiplist removes bad lineages from future pay without rewriting history; (3) the graph health service ranks/flags (SybilRank, FRAUDAR, CopyCatch); (4) optional Sybil-aware calculator (Drucker–Fleischer / Chen et al.).
+
+**Related:** skiplisting a node today *rewards* its referrer by collapsing the chain. Sponsor-liability design options are in [referrer-accountability-design.md](referrer-accountability-design.md).

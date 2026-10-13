@@ -19,7 +19,12 @@
 | SayGM | Recent signal | No | Yes (alpha) | n/a | [signals](recent-signals.md) |
 | Xyper Points | Recent signal | Recruit-a-team tier | Points → token | n/a | [signals](recent-signals.md) |
 | Clicks | Recent signal | No | n/a | 0 stars | [signals](recent-signals.md) |
+| Proof of Humanity | Vouching / invite accountability | n/a (vouches) | n/a | live mainnet | [vouching](vouching-invite-accountability.md) |
+| Ethos Network | Vouching / invite accountability | Invite bond | Slash on misplaced endorsement | (unverified) | [vouching](vouching-invite-accountability.md) |
+| Lobsters | Vouching / invite accountability | Invite tree | Off-chain mod actions | long-running | [vouching](vouching-invite-accountability.md) |
+| Idena | Vouching / invite accountability | Invitation rewards | Rewards withheld | live | [vouching](vouching-invite-accountability.md) |
+| Polkadot / EigenLayer | Vouching / invite accountability (delegator slash) | n/a | Pro-rata stake slash | production | [vouching](vouching-invite-accountability.md) |
 
 **referralTree for comparison:** multilevel (≤10, ≈0.6 decay), on-chain atomic payout via oracle-signed `rewardRoots`, live in Play the Cut ($186K paid, 312 settlements per <https://exchange.mattlovan.dev/> on 2026-10-12).
 
-Each entry covers: what it is, mechanism, traction (public numbers with sources only) and how it differs from referralTree. To add one, use the template in [CONTRIBUTING.md](../CONTRIBUTING.md).
+Each entry covers: what it is, mechanism, traction (public numbers with sources only) and how it differs from referralTree. The vouching segment is design reference (sponsor liability), not a payout competitor. To add one, use the template in [CONTRIBUTING.md](../CONTRIBUTING.md).
