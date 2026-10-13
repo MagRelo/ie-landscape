@@ -18,6 +18,7 @@ referralTree ships the auditable multilevel **split substrate** (on-chain edges,
 4. **Agent attribution bridge.** Accept ERC-8021 builder codes / x402 facilitator metadata (PR #3666) or AREF proofs as evidence an oracle signs into `rewardRoots`.
 5. **Research instrument.** Publish payout-by-generation, branching and settlement-rate histograms per group; cite Ma et al. 2026 for the welfare framing.
 6. **Legal-econ checklist.** Funding-source disclosure per listing; no buy-ins; depth cap described as engineering, not a safe harbor.
+7. **Sponsor liability / vouching.** Fix the skiplist perverse incentive; adopt PoH/Ethos patterns (fractional parent penalty, bond window, self-police credit). See [referrer-accountability-design](referrer-accountability-design.md).
 
 ## Near-term follow-ups
 - Update `docs/theory/graph-topologies.md` for the 2026-10-03 ancestors-only `rewardRoots` change.
