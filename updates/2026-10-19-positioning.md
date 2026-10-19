@@ -3,7 +3,7 @@
 Source: [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-18): `apps/web/src/pages/HomePage.tsx`, `HowItWorksPage.tsx`, `PlayTheCutCaseStudyPage.tsx`, `brand.ts`, `README.md`, `spec/`, commits since 2026-09-25.
 
 ## New positioning (from the ie site)
-- Product name **RichBouquet** (brand.ts; history: Sabir → Mercataform → Incentive Exchange → RichBouquet). Tagline: "rails for the autonomous economy" / "Set the terms. Let the work happen."
+- Product name at ie@eac2361 was **RichBouquet** (brand.ts; history: Sabir → Mercataform → Incentive Exchange → RichBouquet). Tagline: "rails for the autonomous economy" / "Set the terms. Let the work happen."
 - **Principals** publish standing terms (opportunities/projects); **agents** pursue them independently and own their approach. The contract is "rearranged in time": terms, then work, then evaluation and compensation.
 - "Think of all the deals not done": the plain-language form of the Coasean transaction-cost thesis (search, negotiation, trust, oversight), consistent with ie-landscape's thesis (not gas).
 - **Social contract with a visible record:** principal keeps payment discretion (oracle, skiplists); onchain records make terms, relationships and payouts inspectable; offchain handles evaluation and abuse. Two-way history: agents judge principals too.
@@ -21,6 +21,9 @@ Source: [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-
 - papers (4 files) and competitors/agent-x402-attribution.md: "Incentive Exchange" relevance lines reworded; research content untouched.
 
 ## Not reconciled
-- Naming is inconsistent in ie itself: site = RichBouquet, repo README = "AgentOp", spec = "ReferralTree catalog". Used RichBouquet.
-- Live URL still recorded as exchange.mattlovan.dev; site numbers ($186K etc.) are from 2026-10-12, not re-checked.
+- Live URL still recorded as exchange.mattlovan.dev.
 - updates/README.md not edited here to avoid conflicting with open PR #3 (landscape/2026-10-19); add this entry after #3 merges.
+
+## Decisions (Matt, 2026-10-19)
+1. **Product name is LightForest.** It replaces RichBouquet and the other brand names that appear in ie (AgentOp in the repo README, "ReferralTree catalog" in the spec, and the earlier Incentive Exchange). Name history: Sabir → Mercataform → Incentive Exchange → RichBouquet → LightForest. `referralTree` still means the contracts/repo.
+2. **Product metrics reset to zero.** Play the Cut / referralTree stats are now $0 paid out, 0 settlements, 0% settlement rate, 0% skiplist rate in product/overview.md, competitors/README.md and overviews/market-sizing.md (comps line). Market-sizing estimates and third-party research numbers are unchanged. Older update files (2026-10-05/12/13) have no product stats, so they're left as history.

@@ -10,7 +10,7 @@ Where multilevel compensation crosses into pyramid territory. Not legal advice; 
 - **Citation:** P. J. Vander Nat, W. W. Keep. Journal of Public Policy & Marketing 21(1), 2002, pp. 139–151.
 - **Link:** <https://doi.org/10.1509/jppm.21.1.139.17603> (verified via Crossref)
 - **Summary:** Offers an analytical approach for telling legitimate MLM from pyramid schemes, focusing on whether compensation is driven by retail sales to ultimate users or by recruitment and internal (participant) consumption. Models how recruitment-driven rewards imply that most participants must lose.
-- **Implication for referralTree:** Every `rewardRoots` should be funded by real external value (e.g., contest fees, product revenue), never by new-member buy-ins. RichBouquet project records (the published terms) should disclose the funding source of each group.
+- **Implication for referralTree:** Every `rewardRoots` should be funded by real external value (e.g., contest fees, product revenue), never by new-member buy-ins. LightForest project records (the published terms) should disclose the funding source of each group.
 
 ### Multilevel Marketing and Pyramid Schemes in the United States: An Historical Analysis
 - **Citation:** W. W. Keep, P. J. Vander Nat. Journal of Historical Research in Marketing 6(2), 2014.

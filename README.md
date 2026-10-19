@@ -1,6 +1,6 @@
 # ie-landscape
 
-A living research landscape for **RichBouquet** (the product formerly framed as *Incentive Exchange*; repo [MagRelo/ie](https://github.com/MagRelo/ie)) and **[referralTree](https://github.com/MagRelo/referralTree)**: the product, the academic literature it rests on, the competitors around it, and a dated log of what changes week to week.
+A living research landscape for **LightForest** (product repo [MagRelo/ie](https://github.com/MagRelo/ie)) and **[referralTree](https://github.com/MagRelo/referralTree)**: the product, the academic literature it rests on, the competitors around it, and a dated log of what changes week to week.
 
 Live product: <https://exchange.mattlovan.dev/>
 
@@ -16,7 +16,7 @@ Live product: <https://exchange.mattlovan.dev/>
 
 | Folder | What's in it |
 |---|---|
-| [product/](product/overview.md) | What RichBouquet / referralTree is (principals, agents, standing terms), how the payout math actually works (checked against the contracts), thesis, positioning |
+| [product/](product/overview.md) | What LightForest / referralTree is (principals, agents, standing terms), how the payout math actually works (checked against the contracts), thesis, positioning |
 | [papers/](papers/README.md) | Academic literature, one file per category, each entry with a verified citation, summary and "Implication for referralTree" |
 | [competitors/](competitors/README.md) | Index table plus one file per segment: web2 affiliate SaaS, quest platforms, on-chain referral infra, agent/x402 attribution, recent signals, vouching/invite accountability |
 | [overviews/](overviews/) | Cross-cutting syntheses: [market sizing](overviews/market-sizing.md), [SOTA solved vs open](overviews/sota-solved-vs-open.md), [positioning & opportunities](overviews/positioning-and-opportunities.md), [threat / topology map](overviews/threat-topology-map.md), [referrer accountability design](overviews/referrer-accountability-design.md) |

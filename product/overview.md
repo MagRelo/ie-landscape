@@ -1,10 +1,10 @@
-# Product overview: RichBouquet + referralTree
+# Product overview: LightForest + referralTree
 
-_Mechanism last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03). Positioning re-synced to [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-18) on 2026-10-19; site numbers from <https://exchange.mattlovan.dev/> on 2026-10-12._
+_Mechanism last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03). Positioning re-synced to [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-18) on 2026-10-19; product metrics reset to 0 on 2026-10-19._
 
 ## What it is
 
-**RichBouquet: rails for the autonomous economy.** Tagline on the site: *"Set the terms. Let the work happen."* (Product name per `apps/web/src/brand.ts`; earlier names in the repo history: Sabir → Mercataform → Incentive Exchange → RichBouquet. The repo README still says "AgentOp" and the spec says "ReferralTree catalog", so naming is not fully settled.)
+**LightForest: rails for the autonomous economy.** Tagline on the site: *"Set the terms. Let the work happen."* (Product name decided 2026-10-19. Earlier names are in the [update log](../updates/2026-10-19-positioning.md).)
 
 The pitch, in the site's own terms:
 
@@ -18,9 +18,9 @@ The pitch, in the site's own terms:
 
 **Rails underneath:**
 1. **referralTree**: the onchain system of record for who referred whom and who got paid (`ReferralGraph`). Edges are durable and public; payouts are settlement events; skiplisting cuts future pay without erasing the graph.
-2. **Catalog + indexer + graph health** (`apps/api`, `apps/worker`): indexes each implementation and scores branching, payout-by-generation and composite health. This used to be the headline ("Incentive Exchange = graph health service"); in the new positioning it's supporting evidence inside a project record, not the pitch.
+2. **Catalog + indexer + graph health** (`apps/api`, `apps/worker`): indexes each implementation and scores branching, payout-by-generation and composite health. This used to be the headline (graph health service as the product); in the new positioning it's supporting evidence inside a project record, not the pitch.
 
-**Case study: Play the Cut** (fantasy contests on live tournaments). Part of each contest's margin funds bringing in players; agents grow the player network and share in the activity they generate. Invitations are recorded as a referral graph; each contest's prize pool sits in a standard published escrow contract; referral rules are published in advance and applied when the contest settles and payouts are authorized. Play the Cut keeps final control over authorizing payment; contests are described as structured to stay cash-positive. The site showed **$186K paid out, 312 settlements, 40.3% settlement rate, 0.9% skiplist rate** on 2026-10-12 (not re-checked this pass).
+**Case study: Play the Cut** (fantasy contests on live tournaments). Part of each contest's margin funds bringing in players; agents grow the player network and share in the activity they generate. Invitations are recorded as a referral graph; each contest's prize pool sits in a standard published escrow contract; referral rules are published in advance and applied when the contest settles and payouts are authorized. Play the Cut keeps final control over authorizing payment; contests are described as structured to stay cash-positive. **Metrics reset: $0 paid out, 0 settlements, 0% settlement rate, 0% skiplist rate (product metrics reset 2026-10-19).**
 
 ### Terminology
 
@@ -68,7 +68,7 @@ At n=10, positions 8+9 together get 1.07%; positions 1–9 get 59.75%.
 - `rewardId` is single-use per group across both functions (the nonce).
 - The graph pulls `totalAmount` from `msg.sender` and forwards it in the same call; it keeps no balance between transactions.
 - **Protocol fee** comes off the top: `fee = totalAmount * feeBps / 10000` (default 0, capped at `MAX_FEE_BPS = 1000`, i.e. 10%), sent to `feeRecipient`. `distributedAmount = totalAmount - fee` is what gets split.
-- Events: `RootsRewarded`, `LeafRewarded`, and `ProtocolFeeCharged` (only when fee > 0). `distributedAmount + fee == totalAmount`. Incentive Exchange indexes these; a backend log is not a reward.
+- Events: `RootsRewarded`, `LeafRewarded`, and `ProtocolFeeCharged` (only when fee > 0). `distributedAmount + fee == totalAmount`. The LightForest indexer indexes these; a backend log is not a reward.
 
 ### Architecture summary
 
@@ -79,7 +79,7 @@ At n=10, positions 8+9 together get 1.07%; positions 1–9 get 59.75%.
 | Split math | `RewardCalculator` (pure) |
 | Funds | Pulled from payer and forwarded in-call; not custodied |
 | Trust anchor | Group oracle keys (sign registrations and rewards) |
-| Measurement | Incentive Exchange indexing events + graph health scoring |
+| Measurement | LightForest indexing events + graph health scoring |
 
 ## Thesis: IC after transaction costs
 
@@ -96,7 +96,7 @@ The flip side: the same falling costs make **abuse** cheaper (spinning up fake p
 
 ## Positioning (short)
 
-RichBouquet sells **standing terms for autonomous work**: a principal defines an opportunity once and agents pursue it without per-task negotiation, with onchain records making the relationship inspectable and offchain judgment kept explicit. referralTree is the first rail (multilevel referral payouts); graph health is evidence in the project record. Quest platforms own campaigns; affiliate SaaS owns ops; agent payment rails (x402 etc.) own the pipe; we own "terms before work + a visible record." Detail in [overviews/positioning-and-opportunities.md](../overviews/positioning-and-opportunities.md).
+LightForest sells **standing terms for autonomous work**: a principal defines an opportunity once and agents pursue it without per-task negotiation, with onchain records making the relationship inspectable and offchain judgment kept explicit. referralTree is the first rail (multilevel referral payouts); graph health is evidence in the project record. Quest platforms own campaigns; affiliate SaaS owns ops; agent payment rails (x402 etc.) own the pipe; we own "terms before work + a visible record." Detail in [overviews/positioning-and-opportunities.md](../overviews/positioning-and-opportunities.md).
 
 ## Known limits
 - Geometric splits are not Sybil-proof; protection is oracle policy + skiplist + health scoring.

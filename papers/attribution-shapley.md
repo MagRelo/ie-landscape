@@ -20,7 +20,7 @@ How to divide credit for an outcome among multiple contributors. Geometric decay
 - **Citation:** B. Dalessandro, C. Perlich, O. Stitelman, F. Provost. Proc. Sixth International Workshop on Data Mining for Online Advertising and Internet Economy (ADKDD '12), 2012.
 - **Link:** <https://doi.org/10.1145/2351356.2351363> (verified via Crossref)
 - **Summary:** Frames attribution as a causal question (what did each channel cause?) and proposes a Shapley-value-based attribution method grounded in that framing.
-- **Implication for referralTree:** Separates "on the path" from "caused the outcome". RichBouquet's research angle: measure incremental lift per generation instead of assuming it.
+- **Implication for referralTree:** Separates "on the path" from "caused the outcome". LightForest's research angle: measure incremental lift per generation instead of assuming it.
 
 ### Marketing-science referral program papers (context)
 Verified via Crossref; shorter notes because they're about program design, not tree math.

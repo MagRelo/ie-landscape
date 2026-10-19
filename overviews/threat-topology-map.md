@@ -19,7 +19,7 @@ The canonical catalog is referralTree's [docs/theory/graph-topologies.md](https:
 | 11 | Early position advantage | First registrants sit above many triggers | payout Gini by generation | Highlight | Lv–Moscibroda; Reingewertz |
 | 12 | Pyramid optics | Deep, narrow, recruitment-funded | depth vs. branching; funding source | Disclose / delist | Vander Nat & Keep |
 
-**Defense layers:** (1) oracle registration policy is the attack-edge gate (Douceur); (2) skiplist removes bad lineages from future pay without rewriting history; (3) graph health scoring (shown in each project record on the RichBouquet catalog) ranks/flags (SybilRank, FRAUDAR, CopyCatch); (4) optional Sybil-aware calculator (Drucker–Fleischer / Chen et al.).
+**Defense layers:** (1) oracle registration policy is the attack-edge gate (Douceur); (2) skiplist removes bad lineages from future pay without rewriting history; (3) graph health scoring (shown in each project record on the LightForest catalog) ranks/flags (SybilRank, FRAUDAR, CopyCatch); (4) optional Sybil-aware calculator (Drucker–Fleischer / Chen et al.).
 
 **Positioning tie-in (2026-10-19):** the site says principals keep discretion over payment and skiplists exclude addresses, and that these controls belong in the published terms. So each defense layer above should be disclosed in a project's terms, not only run internally.
 

@@ -13,9 +13,9 @@ Context, not a TAM model. Layers measure different things; **don't add them toge
 - **Layer3:** $16.6M revenue 2024, ~$20M run rate (Alea Research). See [crypto-quest-platforms](../competitors/crypto-quest-platforms.md).
 - **Galxe:** 36M users, ~1M DAU (Galxe 2025 Year in Review, self-reported).
 - **Pump.fun Callout Rewards:** ~$15M payout budget (Crypto Briefing).
-- **Play the Cut on referralTree:** $186K paid out, 312 settlements (exchange.mattlovan.dev, 2026-10-12).
+- **Play the Cut on referralTree:** $0 paid out, 0 settlements (product metrics reset 2026-10-19).
 
 ## Implication
 On-chain multilevel graph primitives are a tiny, under-measured niche. Demand sits in attribution, anti-farm, partner payouts, and agent-readable opportunity indexes. The wedge is the settlement-truth / path-credit layer next to quest and affiliate ops, not taking Layer3's revenue.
 
-**Positioning note (2026-10-19).** The ie site now frames the market as "deals not done": work that's worth doing but not worth arranging, unlocked for autonomous agents by standing terms. That market has **no public size estimate** and the ie repo doesn't claim one; the layers above remain the nearest measurable proxies (referral/affiliate spend is the slice the first rail, referralTree, actually addresses). Don't present the affiliate figures as the RichBouquet TAM.
+**Positioning note (2026-10-19).** The ie site now frames the market as "deals not done": work that's worth doing but not worth arranging, unlocked for autonomous agents by standing terms. That market has **no public size estimate** and the ie repo doesn't claim one; the layers above remain the nearest measurable proxies (referral/affiliate spend is the slice the first rail, referralTree, actually addresses). Don't present the affiliate figures as the LightForest TAM.
