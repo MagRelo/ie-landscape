@@ -11,7 +11,8 @@ How to make sponsors answer for the people they bring in, grounded in the litera
 At minimum, when X is skiplisted for cause, X's referrer should not receive X's redistributed share. Options:
 
 - (a) skip X's slot instead of collapsing it: leave a "dead" weight that goes to the trigger user or the treasury;
-- (b) penalize the parent (one hop).
+- (b) penalize the parent (one hop);
+- (c) **decayed ancestor penalty on skiplist**, modeled on RepuLink's Backward Endorsement Penalty Propagation (Wu & Konstantinidis, KDD '26; [papers entry](../papers/referrer-accountability-social-collateral.md)). When X is skiplisted for cause, each ancestor at hop k is charged in proportion to γ^k, from a bond or from `rewardRoots` it already earned through X. Reuse the existing `[10000, 6000, 3600, …]` weights as γ^k and the 10-level cap as the hop bound K. RepuLink is reputation-only, uses synthetic endorsement data, and doesn't analyze Sybil attacks, so treat it as a model, not a validation.
 
 ## Who gets penalized, and how far it spreads
 
@@ -20,7 +21,7 @@ Every production system surveyed (Proof of Humanity, Ethos, Lobsters, Polkadot, 
 | Who | Penalty |
 |---|---|
 | **Parent (1 hop)** | Fractional penalty (Ethos docks vouchers 20% of a successful slash; Lobsters disables invites) |
-| **Grandparents (2–3 hops)** | Optional decayed penalty (e.g. reuse 0.6^k, capped at 2–3 hops). Defensible in theory; almost no production precedent |
+| **Grandparents (2–3 hops)** | Optional decayed penalty (e.g. reuse 0.6^k, capped at 2–3 hops). Academic model: RepuLink's BEPP (Wu & Konstantinidis, KDD '26) penalizes endorsers by γ^k per hop. No production precedent |
 | **Siblings** | **Never** |
 | **Descendants of the fraudulent node** | **Quarantine, not slash**: reparent to the grandparent or freeze pending review. Honest people invited by a fraud are victims (cf. Lobsters pruning only inactive/no-presence accounts) |
 
@@ -71,4 +72,4 @@ Frame it as **vouching / sponsorship integrity** (PoH / Ethos language). Keep pe
 4. Bond size and duration per group: is it a per-group parameter?
 5. Is "strictly required referral" compatible with permissionless onboarding? Who seeds the first generation, given `REFERRAL_ROOT` children are maximally powerful (up to 100% share)?
 6. Can penalties be enforced on-chain (stake) or only via oracle-side skiplist / accounting?
-7. Verify the **(unverified)** items in the papers file, especially the RepuLink / ACM paper, before external use.
+7. Verify the remaining **(unverified)** items in the papers file before external use. RepuLink is now verified (KDD '26).

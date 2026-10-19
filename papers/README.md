@@ -11,7 +11,7 @@ Each entry lives in a category file with a verified citation, link, 2–4 senten
 | Profit reallocation & resale trees | [profit-reallocation-resale-trees.md](profit-reallocation-resale-trees.md) | Ma, Xin, Li, Zheng & Deng 2026 (arXiv:2609.33506); Xin et al. TBDS 2025 |
 | Attribution & Shapley-style credit | [attribution-shapley.md](attribution-shapley.md) | Shapley 1953; Shao & Li 2011; Dalessandro et al. 2012; marketing-science referral papers |
 | MLM, pyramid & legal | [mlm-pyramid-legal.md](mlm-pyramid-legal.md) | Vander Nat & Keep 2002; Keep & Vander Nat 2014 |
-| Referrer accountability & social collateral | [referrer-accountability-social-collateral.md](referrer-accountability-social-collateral.md) | Karlan et al. 2009; Besley & Coate 1995; Bryan–Karlan–Zinman; Beaman & Magruder 2012; Kellett–Tran–Li 2010; Cheng & Friedman 2005 |
+| Referrer accountability & social collateral | [referrer-accountability-social-collateral.md](referrer-accountability-social-collateral.md) | Karlan et al. 2009; Besley & Coate 1995; Bryan–Karlan–Zinman; Beaman & Magruder 2012; Kellett–Tran–Li 2010; Wu & Konstantinidis 2026 (RepuLink, KDD); Cheng & Friedman 2005 |
 
 ## Backlog (carried over from earlier briefs, not yet verified or filed)
 - Liu & Zhu 2022, airdrop Sybil behavior, arXiv:2209.04603 **(unverified)**
