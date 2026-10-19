@@ -65,10 +65,30 @@ Making a referrer answer for the people they bring in: joint liability in econom
 - **Implication for referralTree:** a direct blueprint. Make the inviter's standing a function of the subtree, and let inviters skiplist their own invitees. Self-policing earns credit.
 
 ### Enforcing Trust Accountability with Backward Propagation (RepuLink)
-- **Citation:** **(unverified)** — surfaced by search at ACM as "Enforcing Trust Accountability with Backward Propagation" (RepuLink), ACM 2025/26.
-- **Link:** <https://dl.acm.org/doi/10.1145/3770855.3817611> **(unverified — fetch timed out; authors, venue and content not confirmed)**
-- **Summary:** Search describes it as recursive endorser penalties that decay with distance. **(unverified)** Verify before citing.
-- **Implication for referralTree:** if confirmed, would be the rare CS precedent for decaying multi-hop sponsor penalties. Do not cite externally until verified.
+- **Citation:** Wenbo Wu, George Konstantinidis (University of Southampton). *Enforcing Trust Accountability with Backward Propagation.* KDD '26 (32nd ACM SIGKDD), Jeju, Aug 9–13, 2026, Vol. 2, pp. 5476–5487. Published online Aug 8, 2026. DOI 10.1145/3770855.3817611. CC-BY 4.0. Metadata verified via Crossref; full text read from arXiv.
+- **Link:** <https://dl.acm.org/doi/10.1145/3770855.3817611> (ACM, behind Cloudflare for scripted fetch) · <https://arxiv.org/abs/2606.08851> (open copy, verified)
+- **Mechanism:** Two layers: an endorsement network E (weighted vouches) and an interaction-feedback network T (ratings −10..10). Reputation is R(t+1) = (αTᵀ + (1−α)Eᵀ)R(t), clipped at zero and normalized (EigenTrust-like).
+  - **Cold start:** a new node starts at (1−α)·Σ E_ij·R_i over its endorsers.
+  - **BEPP (penalty):** each node gets a penalty signal g(N_j) = e^(−βN_j) from its negative feedback. The penalty flows upstream to endorsers, π = Σ_k γ^k E^k (1−g(N)) = γE(I−γE)⁻¹(1−g(N)), with γ ∈ (0,1). Direct endorsers get the most. It stops at tolerance δ or a max hop bound K.
+  - **BERP (reward):** the mirror image, with r(P_j) = 2 − e^(−λP_j); ρ = Σ_k γ^k E^k (r(P)−1).
+  - **Update:** R ← R − π + ρ. Each edge is rescaled, E_ij ← E_ij·g(N_j)·r(P_j), then renormalized, so a vouch for a bad node weakens automatically.
+  - **Departure:** the identity is deactivated, not deleted, and its endorsements are revoked. Rejoining relinks the old identity, which blocks whitewashing.
+- **Results:** Bitcoin-OTC (5,881 nodes / 35,592 edges) and Bitcoin-Alpha (3,783 / 24,186).
+  - **Interaction layer only:** AUC 0.83/0.84, Precision@K 0.75/0.77, Kendall τ 0.46/0.47, Spearman 0.56/0.58.
+  - **Full two-layer model:** AUC 0.81/0.85, Kendall τ 0.44/0.49, Spearman 0.53/0.60.
+  - Beats 5 baselines, by about 7.8–8.5 points in peak AUC over the strongest. Converges in ~45 iterations to 1e-6.
+  - Ablation: BEPP makes targeted corrections to a few nodes; BERP drives broad rank reordering. In a 7-node toy case, the endorser of a bad node falls to ≈0.60.
+- **Caveats:**
+  - The endorsement layer is **synthetic**: it maps users onto the Epinions trust graph, with every edge set to weight 1.
+  - Ranking quality only. Nothing is staked and no money moves.
+  - Assumes many endorsers per node, whereas referralTree gives each node a single parent.
+  - Sybil and collusion resistance is not analyzed; the authors list it as future work.
+  - Its anti-whitewashing relies on linking identities, which permissionless chains can't enforce.
+- **Implication for referralTree:**
+  - The closest academic model of **decayed multi-hop sponsor penalties**. γ^k per hop has the same shape as `RewardCalculator`'s 0.6^k weights, and K matches the 10-level cap.
+  - BEPP is the missing mirror image of `rewardRoots`.
+  - Suggests charging a skiplisted node's ancestors with the existing decayed weights, instead of moving them up (see [design note](../overviews/referrer-accountability-design.md)).
+  - Doesn't address chain-stuffing.
 
 ### SybilGuard / SybilLimit / SybilRank
 - **Citation:** Yu et al. 2006/2008; Cao et al. 2012. Already filed in [sybil-resistance.md](sybil-resistance.md).
