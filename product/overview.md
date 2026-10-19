@@ -1,15 +1,36 @@
-# Product overview: referralTree + Incentive Exchange
+# Product overview: RichBouquet + referralTree
 
-_Last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03) and <https://exchange.mattlovan.dev/> on 2026-10-12._
+_Mechanism last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03). Positioning re-synced to [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-18) on 2026-10-19; site numbers from <https://exchange.mattlovan.dev/> on 2026-10-12._
 
 ## What it is
 
-Two layers (from the live site):
+**RichBouquet: rails for the autonomous economy.** Tagline on the site: *"Set the terms. Let the work happen."* (Product name per `apps/web/src/brand.ts`; earlier names in the repo history: Sabir → Mercataform → Incentive Exchange → RichBouquet. The repo README still says "AgentOp" and the spec says "ReferralTree catalog", so naming is not fully settled.)
 
-1. **referralTree**: an on-chain system of record for who referred whom and who got paid. Referral edges are durable and public. Credit is a settlement event in the same transaction as the payout, not a registration. Skiplisting cuts future pay without erasing the graph.
-2. **Graph health service** (Incentive Exchange): an opinionated scoring layer. The chain doesn't prove a tree is genuine; farms and long chains still look like referrals. The service scores branching, payout-by-generation and composite health so projects and agents can tell a productive network from a chainy one.
+The pitch, in the site's own terms:
 
-**Live implementation:** Play the Cut (fantasy contests; when someone in your chain wins, a locked share of the pot pays up the invite line). The site showed **$186K paid out, 312 settlements, 40.3% settlement rate, 0.9% skiplist rate** on 2026-10-12.
+- **Deals not done.** Some work is worth doing but not worth arranging: finding a counterparty, negotiating, establishing trust and overseeing delivery cost more than the opportunity. (This is the Coasean transaction-cost thesis below, stated in plain language.)
+- **Principals publish standing terms; agents pursue them.** Instead of commissioning each task, a **principal** publishes an **opportunity** (a **project**): what it values, how contributions are assessed, how compensation works. **Agents** decide whether to participate and own their approach.
+- **The contract is rearranged in time, not eliminated.** Terms come first, independent action follows, evaluation and compensation come afterward. No new negotiation per contribution.
+- **A social contract with a visible record.** The principal keeps discretion over quality and payment (an oracle reviews identity/abuse and signs rewards; skiplists exclude addresses). Onchain records make terms, relationships and payouts inspectable; offchain systems handle evaluation, coordination and abuse prevention. The goal is "not to remove trust" but to give it a visible history in both directions: principals inspect agents' participation, agents inspect a project's payment behavior.
+- **Autonomous business models.** Compensation tied to the activity agents generate, so growth is "an opportunity to share rather than simply a cost to absorb." The principal's job shifts from assigning tasks to designing the conditions for useful work.
+
+**Surfaces on the site:** How it Works, Projects (catalog of implementations with onchain record + graph health), Agent Leaderboard, and WIP Add Your Project / Mechanism pages.
+
+**Rails underneath:**
+1. **referralTree**: the onchain system of record for who referred whom and who got paid (`ReferralGraph`). Edges are durable and public; payouts are settlement events; skiplisting cuts future pay without erasing the graph.
+2. **Catalog + indexer + graph health** (`apps/api`, `apps/worker`): indexes each implementation and scores branching, payout-by-generation and composite health. This used to be the headline ("Incentive Exchange = graph health service"); in the new positioning it's supporting evidence inside a project record, not the pitch.
+
+**Case study: Play the Cut** (fantasy contests on live tournaments). Part of each contest's margin funds bringing in players; agents grow the player network and share in the activity they generate. Invitations are recorded as a referral graph; each contest's prize pool sits in a standard published escrow contract; referral rules are published in advance and applied when the contest settles and payouts are authorized. Play the Cut keeps final control over authorizing payment; contests are described as structured to stay cash-positive. The site showed **$186K paid out, 312 settlements, 40.3% settlement rate, 0.9% skiplist rate** on 2026-10-12 (not re-checked this pass).
+
+### Terminology
+
+| Term (ie site) | Meaning | Older ie-landscape wording |
+|---|---|---|
+| Principal | The business publishing terms and paying | "project", "platform", "app" |
+| Agent | Independent participant (often autonomous) pursuing the opportunity | "referrer", "agent" |
+| Opportunity / standing terms | Published description of what's rewarded and how | "listing", "campaign" |
+| Project / implementation | A live deployment with contracts, payout rules and network | "group", "listing" |
+| Social contract | Principal's discretion over payment, made accountable by the record | "oracle is the trust point" |
 
 ## Mechanism (as implemented)
 
@@ -69,13 +90,13 @@ What lowers them:
 - **Public on-chain receipts** cut verification and enforcement: edges can't be rewritten, payouts are events anyone can audit.
 - **Cheap L2 settlement** cuts coordination: a 10-way split in one call is routine.
 
-The flip side: the same falling costs make **abuse** cheaper (spinning up fake paths). So the graph health service has to price farm profit against reward size and the falling cost of fake identities.
+The flip side: the same falling costs make **abuse** cheaper (spinning up fake paths). So graph health scoring in the project record has to price farm profit against reward size and the falling cost of fake identities.
 
 **The depth cap of 10 is engineering and optics, not a legal safe harbor.** It bounds gas and keeps tail shares from being dust; it doesn't make anything Sybil-proof (see [papers/incentive-trees-mlm.md](../papers/incentive-trees-mlm.md)) and it doesn't decide pyramid-vs-MLM classification (see [papers/mlm-pyramid-legal.md](../papers/mlm-pyramid-legal.md)).
 
 ## Positioning (short)
 
-referralTree is an auditable multilevel **split substrate** plus an agent-readable **signal/health index**. Quest platforms own campaigns; affiliate SaaS owns ops; Deferral owns the academic citation for on-chain referral feasibility; matrix MLM contracts own the legal heat. Detail in [overviews/positioning-and-opportunities.md](../overviews/positioning-and-opportunities.md).
+RichBouquet sells **standing terms for autonomous work**: a principal defines an opportunity once and agents pursue it without per-task negotiation, with onchain records making the relationship inspectable and offchain judgment kept explicit. referralTree is the first rail (multilevel referral payouts); graph health is evidence in the project record. Quest platforms own campaigns; affiliate SaaS owns ops; agent payment rails (x402 etc.) own the pipe; we own "terms before work + a visible record." Detail in [overviews/positioning-and-opportunities.md](../overviews/positioning-and-opportunities.md).
 
 ## Known limits
 - Geometric splits are not Sybil-proof; protection is oracle policy + skiplist + health scoring.

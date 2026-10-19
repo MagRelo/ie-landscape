@@ -34,4 +34,4 @@ How to pay people along a recruitment tree, and what properties (Sybil-proofness
 - **Citation:** Y. Reingewertz. *An economic model of multi-level marketing.* PLOS ONE 16(7), 2021.
 - **Link:** <https://doi.org/10.1371/journal.pone.0253700> (verified via Crossref)
 - **Summary:** Economic model of MLM participation and earnings, examining how recruitment-based compensation shapes outcomes for participants at different positions. Useful empirical/theoretical counterweight to purely mechanism-design treatments.
-- **Implication for referralTree:** Supports the early-position-advantage concern and the need for payout-by-generation metrics on Incentive Exchange.
+- **Implication for referralTree:** Supports the early-position-advantage concern and the need for payout-by-generation metrics in RichBouquet project records.

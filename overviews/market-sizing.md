@@ -17,3 +17,5 @@ Context, not a TAM model. Layers measure different things; **don't add them toge
 
 ## Implication
 On-chain multilevel graph primitives are a tiny, under-measured niche. Demand sits in attribution, anti-farm, partner payouts, and agent-readable opportunity indexes. The wedge is the settlement-truth / path-credit layer next to quest and affiliate ops, not taking Layer3's revenue.
+
+**Positioning note (2026-10-19).** The ie site now frames the market as "deals not done": work that's worth doing but not worth arranging, unlocked for autonomous agents by standing terms. That market has **no public size estimate** and the ie repo doesn't claim one; the layers above remain the nearest measurable proxies (referral/affiliate spend is the slice the first rail, referralTree, actually addresses). Don't present the affiliate figures as the RichBouquet TAM.
