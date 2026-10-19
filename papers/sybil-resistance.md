@@ -41,3 +41,17 @@ Fake identities are the central attack on any per-identity reward. This literatu
 - **Link:** <https://doi.org/10.1145/1851182.1851226> (verified via Crossref)
 - **Summary:** Shows the leading social-graph Sybil defenses all effectively rank nodes by how well they connect to a trusted node's local community, i.e., they're community detection. Consequence: they mislabel honest users outside the trusted community, and are vulnerable when Sybils embed near the seed.
 - **Implication for referralTree:** Referral trees are full of legitimate tight communities (a contest league, a Discord). Don't auto-skiplist on structure alone; combine with timing and economic signals and keep a human/oracle confirm step.
+
+## Recent (2026): Sybil cost bounds for payment and reward systems
+
+### AgentValve: Sybil-Resilient Payment Authorization for Permissionless AI Markets
+- **Citation:** J. Zhang, Z. Luo, A. Kate. *AgentValve: Sybil-Resilient Payment Authorization for Permissionless AI Markets.* arXiv:2610.12948 (v1, 9 Oct 2026).
+- **Link:** <https://arxiv.org/abs/2610.12948> (verified on arXiv)
+- **Summary:** Models reputation as finite *capacity* on a directed trust graph and authorizes an agent payment only along trust paths with enough spare capacity; a smart contract atomically reserves that capacity per admitted payment. An honest agent's loss is bounded by the capacity it extends into the adversarial region, so minting identities inside that region can't raise the bound. Payment-backed capacity creation plus a bounded route length stop attackers from draining honest capacity for free. Prototype on six months of Ethereum data: exposure stays bounded with up to 10,000 synthetic Sybils; witness-commit cuts admission cost by up to 40.8% vs baselines; ~$0.04–$0.21 per common payment (authors' figures).
+- **Implication for referralTree:** A concrete on-chain version of "a sponsor's liability is capped by what they extended": give each referrer a finite vouching capacity that their sub-tree's payouts draw on, and a farm hanging under them can only ever cost what that edge holds. Bounded route length is the same lever as the depth-10 cap, here with a security proof attached.
+
+### NFT-Based Reward Mechanisms: Sybil Farming, Vesting, and Stochastic Verification
+- **Citation:** M. A. Javarone, S. Leonardos, C. Ventre. *NFT-Based Reward Mechanisms: Sybil Farming, Vesting, and Stochastic Verification.* arXiv:2609.13064 (v1, 11 Sep 2026).
+- **Link:** <https://arxiv.org/abs/2609.13064> (verified on arXiv)
+- **Summary:** A farmer runs many identities that submit fraudulent reward claims subject to vesting; the issuer randomly audits during vesting, and linked identities form a cluster that is forfeited entirely when any one is caught. Rewards then grow linearly in identities while the chance of escaping detection falls geometrically, giving an optimal farm size and a sufficient deterrence frontier in audit cost, vesting length and penalty. When small audit capacity is cheap, vesting alone is not optimal; the paper also separates the role of penalties from cluster-level auditing.
+- **Implication for referralTree:** Formal backing for the claw-back ladder: hold rewards in a vesting window, randomly audit a few settlements, and on a hit forfeit the whole linked cluster (the sub-tree), not just the one node. Use their frontier to size the ~180-day bond against audit cost instead of guessing. Ventre co-authored earlier MLM-mechanism work, so this sits close to the incentive-tree literature.

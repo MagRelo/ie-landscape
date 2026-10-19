@@ -15,6 +15,8 @@
 | Split402 | Agent / x402 | No | Deferred batches | n/a | [agent](agent-x402-attribution.md) |
 | IETF AREF (draft-stone-aref-00) | Agent spec | Yes (any depth) | Escrow-based | draft -00 | [agent](agent-x402-attribution.md) |
 | x402 builder codes / ERC-8021 | Attribution tagging | n/a | n/a | PR #3666 merged 2026-10-06 | [agent](agent-x402-attribution.md) |
+| edgeX referral upgrade | Recent signal | No (3 rate tiers) | Daily claim | n/a | [signals](recent-signals.md) |
+| Engy (SN53) | Recent signal | No | USDC or credits | n/a | [signals](recent-signals.md) |
 | Pump.fun Callout Rewards | Recent signal | No | Yes (USDC daily) | ~$15M budget | [signals](recent-signals.md) |
 | SayGM | Recent signal | No | Yes (alpha) | n/a | [signals](recent-signals.md) |
 | Xyper Points | Recent signal | Recruit-a-team tier | Points → token | n/a | [signals](recent-signals.md) |

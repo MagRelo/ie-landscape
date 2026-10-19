@@ -2,6 +2,18 @@
 
 Live programs that changed how they pay for referral/recommendation. Newest first. Move items into a segment file once they're clearly durable.
 
+### edgeX referral commission upgrade (effective Oct 9, 2026)
+- **What:** edgeX (perp DEX) upgraded its referral program. Source: edgeX, Oct 10, 2026, <https://pro.edgex.exchange/en-US/news/article/edgex-referral-commission-upgrade-earn-up-to-30-on-friends-trading-fees>.
+- **Mechanism:** single-level fee share on referees' trading fees in a published three-tier ladder: Lv.1 5% (≥5 active referrals and ≥500K USDC referee 14-day volume), Lv.2 15% (≥30 and ≥3M), Lv.3 30% (≥100 and ≥10M). A referee counts as active only after ≥100 USDC deposit and ≥50K USDC valid volume. Tiers hold 14 days and auto-downgrade to Lv0; rewards settle daily at 00:00 UTC and are claimed into the trading account.
+- **Traction:** none public.
+- **vs referralTree:** single-level and volume-gated, but a clean example of a public, rolling "proof of active referees" bar that downgrades automatically. Shows exchanges converging on published rules plus activity thresholds, the transparency referralTree already has, without multilevel path credit.
+
+### Engy (Bittensor SN53) referral program (Oct 12, 2026)
+- **What:** Engy, an API service on Bittensor subnet 53, launched a referral program. Source: The TAO Daily via Taosis, Oct 12, 2026, <https://taosis.com/news/16881946> (summary only; terms not independently verified beyond it).
+- **Mechanism:** 10% of referred customers' API spend for 12 months, paid in USDC or API credits.
+- **Traction:** none public.
+- **vs referralTree:** second Bittensor subnet in two weeks (after SayGM SN28) paying single-level, time-boxed revenue share on API spend. Pattern worth noting: AI-API sellers are reaching for referral rails, which is the agent-attribution market referralTree targets.
+
 ### Pump.fun Callout Rewards (change effective Oct 10, 2026)
 - **What:** Pump.fun pays users daily in USDC for token "callouts" (recommendations). Source: Crypto Briefing, Oct 10, 2026, <https://cryptobriefing.com/pump-fun-callout-rewards-follower-profits/>.
 - **Mechanism:** from the Oct 10 payout, rewards track whether **followers who acted on a callout benefited (profited)**, not trading volume generated; low-cap token callouts earn at a reduced rate; Oct 4 change already cut rewards for high-frequency posters. The methodology is **not disclosed** and can change without notice.
