@@ -10,7 +10,7 @@ Paying intermediaries to forward a query (or task) until someone with the answer
 - **Citation:** J. Kleinberg, P. Raghavan. *Query Incentive Networks.* 46th IEEE Symposium on Foundations of Computer Science (FOCS '05), 2005.
 - **Links:** <https://doi.org/10.1109/sfcs.2005.63> (verified via Crossref); PDF <https://www.cs.cornell.edu/home/kleinber/focs05-qin.pdf>
 - **Summary:** A root offers a reward for an answer; each node lacking it forwards a smaller offer to its children and keeps the difference. Models this on random branching trees and studies equilibrium reward needed as a function of answer rarity. Finds a threshold in the branching factor: around branching 2 the required reward changes sharply (exponential vs. polynomial/logarithmic behavior in rarity).
-- **Implication for referralTree:** Incentive Exchange should instrument **effective branching** per tree (bushy vs. chainy) because it predicts whether depth-based rewards can propagate at all. Frames IE as a query incentive network for agents.
+- **Implication for referralTree:** The LightForest catalog / graph health should instrument **effective branching** per tree (bushy vs. chainy) because it predicts whether depth-based rewards can propagate at all. Fits the "principal publishes terms, agents pursue" framing: an opportunity propagating through agents is a query incentive network.
 
 ### Time-Critical Social Mobilization
 - **Citation:** G. Pickard, W. Pan, I. Rahwan, M. Cebrian, R. Crane, A. Madan, A. Pentland. *Time-Critical Social Mobilization.* Science 334(6055), 2011, pp. 509–512.

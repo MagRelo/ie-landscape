@@ -1,6 +1,6 @@
 # Agent and x402 attribution
 
-Referral/attribution for machine-to-machine payments. This is where Incentive Exchange's "query incentive network for agents" framing competes.
+Referral/attribution for machine-to-machine payments. This is where LightForest's "Work for Agents" framing competes most directly: these projects move agent payments, LightForest publishes the terms agents work under and records the outcome.
 
 ### Split402
 - **What:** referral commissions for x402-paid APIs. <https://github.com/split402protocol/splitx402>

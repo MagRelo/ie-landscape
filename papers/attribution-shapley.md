@@ -14,13 +14,13 @@ How to divide credit for an outcome among multiple contributors. Geometric decay
 - **Citation:** X. Shao, L. Li. Proc. 17th ACM SIGKDD (KDD '11), 2011.
 - **Link:** <https://doi.org/10.1145/2020408.2020453> (verified via Crossref)
 - **Summary:** Proposes data-driven models (bagged logistic regression and a probabilistic model) that assign conversion credit across multiple ad touchpoints, replacing last-touch rules, and evaluates stability and accuracy on real ad data.
-- **Implication for referralTree:** Web2 attribution already moved past fixed rules to learned credit. A future calculator could learn per-group decay from settlement data; IE can publish the observed payout-by-generation curve as a starting point.
+- **Implication for referralTree:** Web2 attribution already moved past fixed rules to learned credit. A future calculator could learn per-group decay from settlement data; LightForest can publish the observed payout-by-generation curve as a starting point.
 
 ### Causally Motivated Attribution for Online Advertising
 - **Citation:** B. Dalessandro, C. Perlich, O. Stitelman, F. Provost. Proc. Sixth International Workshop on Data Mining for Online Advertising and Internet Economy (ADKDD '12), 2012.
 - **Link:** <https://doi.org/10.1145/2351356.2351363> (verified via Crossref)
 - **Summary:** Frames attribution as a causal question (what did each channel cause?) and proposes a Shapley-value-based attribution method grounded in that framing.
-- **Implication for referralTree:** Separates "on the path" from "caused the outcome". Incentive Exchange's research angle: measure incremental lift per generation instead of assuming it.
+- **Implication for referralTree:** Separates "on the path" from "caused the outcome". LightForest's research angle: measure incremental lift per generation instead of assuming it.
 
 ### Marketing-science referral program papers (context)
 Verified via Crossref; shorter notes because they're about program design, not tree math.

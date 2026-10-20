@@ -27,6 +27,6 @@
 | Idena | Vouching / invite accountability | Invitation rewards | Rewards withheld | live | [vouching](vouching-invite-accountability.md) |
 | Polkadot / EigenLayer | Vouching / invite accountability (delegator slash) | n/a | Pro-rata stake slash | production | [vouching](vouching-invite-accountability.md) |
 
-**referralTree for comparison:** multilevel (≤10, ≈0.6 decay), on-chain atomic payout via oracle-signed `rewardRoots`, live in Play the Cut ($186K paid, 312 settlements per <https://exchange.mattlovan.dev/> on 2026-10-12).
+**referralTree for comparison:** multilevel (≤10, ≈0.6 decay), on-chain atomic payout via oracle-signed `rewardRoots`, live in Play the Cut (product metrics reset to 0 on 2026-10-19: $0 paid, 0 settlements).
 
 Each entry covers: what it is, mechanism, traction (public numbers with sources only) and how it differs from referralTree. The vouching segment is design reference (sponsor liability), not a payout competitor. To add one, use the template in [CONTRIBUTING.md](../CONTRIBUTING.md).
