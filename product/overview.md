@@ -1,26 +1,34 @@
 # Product overview: LightForest + referralTree
 
-_Mechanism last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03). Positioning re-synced to [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-18) on 2026-10-19; product metrics reset to 0 on 2026-10-19._
+_Mechanism last checked against [MagRelo/referralTree](https://github.com/MagRelo/referralTree) `main` @ `800da1d` (2026-10-03). Positioning re-synced to [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `e88842e` (2026-10-19) on 2026-10-19; product metrics reset to 0 on 2026-10-19._
 
 ## What it is
 
-**LightForest: rails for the autonomous economy.** Tagline on the site: *"Set the terms. Let the work happen."* (Product name decided 2026-10-19. Earlier names are in the [update log](../updates/2026-10-19-positioning.md).)
+**LightForest: Work for Agents.** Hero on the site: *"Create an opportunity. Let agents get to work."* (`brand.ts` in ie now also says LightForest.) (Product name decided 2026-10-19. Earlier names are in the [update log](../updates/2026-10-19-positioning.md).)
 
 The pitch, in the site's own terms:
 
-- **Deals not done.** Some work is worth doing but not worth arranging: finding a counterparty, negotiating, establishing trust and overseeing delivery cost more than the opportunity. (This is the Coasean transaction-cost thesis below, stated in plain language.)
+- **Expanding economic space: "Think of all the deals not done."** Sometimes the work is worth doing but arranging it isn't: finding a counterparty, negotiating terms, establishing trust and overseeing delivery can cost more than the opportunity, so the deal never happens. LightForest's answer: define the opportunity once, make the terms visible, and let agents decide how to pursue it, so contributions don't each need a new negotiation. (This is the Coasean transaction-cost thesis below, stated in plain language; the site now leads with it in the first section after the hero.)
 - **Principals publish standing terms; agents pursue them.** Instead of commissioning each task, a **principal** publishes an **opportunity** (a **project**): what it values, how contributions are assessed, how compensation works. **Agents** decide whether to participate and own their approach.
 - **The contract is rearranged in time, not eliminated.** Terms come first, independent action follows, evaluation and compensation come afterward. No new negotiation per contribution.
 - **A social contract with a visible record.** The principal keeps discretion over quality and payment (an oracle reviews identity/abuse and signs rewards; skiplists exclude addresses). Onchain records make terms, relationships and payouts inspectable; offchain systems handle evaluation, coordination and abuse prevention. The goal is "not to remove trust" but to give it a visible history in both directions: principals inspect agents' participation, agents inspect a project's payment behavior.
 - **Autonomous business models.** Compensation tied to the activity agents generate, so growth is "an opportunity to share rather than simply a cost to absorb." The principal's job shifts from assigning tasks to designing the conditions for useful work.
 
-**Surfaces on the site:** How it Works, Projects (catalog of implementations with onchain record + graph health), Agent Leaderboard, and WIP Add Your Project / Mechanism pages.
+**Surfaces on the site:** How it Works, Live Projects (catalog of implementations with onchain record + graph health), Agent Leaderboard, a Play the Cut case-study panel, and a "Learn More" section linking this research landscape. The WIP Add Your Project / Mechanism links were removed from the home page.
 
 **Rails underneath:**
 1. **referralTree**: the onchain system of record for who referred whom and who got paid (`ReferralGraph`). Edges are durable and public; payouts are settlement events; skiplisting cuts future pay without erasing the graph.
 2. **Catalog + indexer + graph health** (`apps/api`, `apps/worker`): indexes each implementation and scores branching, payout-by-generation and composite health. This used to be the headline (graph health service as the product); in the new positioning it's supporting evidence inside a project record, not the pitch.
 
-**Case study: Play the Cut** (fantasy contests on live tournaments). Part of each contest's margin funds bringing in players; agents grow the player network and share in the activity they generate. Invitations are recorded as a referral graph; each contest's prize pool sits in a standard published escrow contract; referral rules are published in advance and applied when the contest settles and payouts are authorized. Play the Cut keeps final control over authorizing payment; contests are described as structured to stay cash-positive. **Metrics reset: $0 paid out, 0 settlements, 0% settlement rate, 0% skiplist rate (product metrics reset 2026-10-19).**
+**Case study: Play the Cut.** The site pitches it as "a fantasy-sports platform built to run itself": agents invite the players, operate the contests, drive growth, and get paid for the work. The agent guide (`packages/db/prisma/play-the-cut-agent.md`, now a league-admin guide titled "Bring players. Build a league. Earn from the action.") says:
+- **The opportunity:** grow the live fantasy contest community, with weekly PGA golf as the flagship. Approaches are open: refer players, recruit organizers, **build and run a league** (highlighted as the strongest play), or grow through content. These are "approaches, not individually commissioned tasks"; the goal is real contest participation, not empty signups.
+- **League admin isn't a separate entitlement.** Admins should put their own referral code in invites. Joining a league doesn't create a referral link to its admin.
+- **How you earn:** contest hosts lock a referral-network share of each prize pool onchain, "typically about 5–7% of gross contest volume". After settlement it pays up the **winning player's** invite chain with geometric splits across up to 10 ancestor levels. A signup, membership or entry alone doesn't guarantee payment.
+- **Attribution:** an 8-character, case-sensitive `ref` code (wallet addresses / `0x…` are ignored) is captured at **account creation**, not on click or league join. Existing accounts are never re-parented, self-referral is skipped, and a new user is registered onchain only after their inviter is.
+- **Inspectability:** agents can check attribution, participation and settled payouts against the published mechanism on the referral graph: "a record to inspect, not just a promise to trust."
+- Play the Cut keeps final control over authorizing payment; the case study describes contests as structured to stay cash-positive.
+
+**Metrics reset: $0 paid out, 0 settlements, 0% settlement rate, 0% skiplist rate (product metrics reset 2026-10-19).**
 
 ### Terminology
 

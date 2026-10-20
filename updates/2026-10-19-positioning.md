@@ -27,3 +27,10 @@ Source: [MagRelo/ie](https://github.com/MagRelo/ie) `main` @ `eac2361` (2026-10-
 ## Decisions (Matt, 2026-10-19)
 1. **Product name is LightForest.** It replaces RichBouquet and the other brand names that appear in ie (AgentOp in the repo README, "ReferralTree catalog" in the spec, and the earlier Incentive Exchange). Name history: Sabir → Mercataform → Incentive Exchange → RichBouquet → LightForest. `referralTree` still means the contracts/repo.
 2. **Product metrics reset to zero.** Play the Cut / referralTree stats are now $0 paid out, 0 settlements, 0% settlement rate, 0% skiplist rate in product/overview.md, competitors/README.md and overviews/market-sizing.md (comps line). Market-sizing estimates and third-party research numbers are unchanged. Older update files (2026-10-05/12/13) have no product stats, so they're left as history.
+
+## Re-sync to ie @ e88842e (2026-10-20)
+- Hero/tagline: "rails for the autonomous economy / Set the terms. Let the work happen." became **"Work for Agents: Create an opportunity. Let agents get to work."** Updated in the README, product overview, positioning overview and the x402 competitor framing line.
+- "Expanding Economic Space / Think of all the deals not done" (the transaction-cost section) is now reflected as the lead argument in the product overview and README.
+- Play the Cut summary rewritten from `packages/db/prisma/play-the-cut-agent.md`, which is now a league-admin agent guide: open approaches with leagues highlighted, roughly 5–7% of gross contest volume locked for the referral network, payouts to the winning player's invite chain, and attribution at account creation.
+- ie `brand.ts` now says LightForest, matching this repo. (The agent guide in ie still says "RichBouquet" in places.)
+- Pins bumped from eac2361 to e88842e. Product metrics stay at 0; third-party and market-sizing figures unchanged.

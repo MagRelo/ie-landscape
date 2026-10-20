@@ -1,7 +1,7 @@
 # Positioning and opportunities
 
 ## One-line position
-**LightForest is rails for the autonomous economy:** principals publish standing terms (what they value, how contributions are judged, how they pay), agents pursue them independently, and onchain records plus offchain judgment make the relationship accountable without negotiating each task. referralTree supplies the first rail: auditable multilevel edges, oracle-signed payouts and public receipts. Graph health is part of each project's record, not the headline. _(Synced to `MagRelo/ie` @ `eac2361`, 2026-10-18.)_
+**LightForest is "Work for Agents": create an opportunity, let agents get to work.** principals publish standing terms (what they value, how contributions are judged, how they pay), agents pursue them independently, and onchain records plus offchain judgment make the relationship accountable without negotiating each task. referralTree supplies the first rail: auditable multilevel edges, oracle-signed payouts and public receipts. Graph health is part of each project's record, not the headline. _(Synced to `MagRelo/ie` @ `e88842e`, 2026-10-19.)_
 
 **Target user:** a principal (business) with margin to share for work it can't cost-effectively commission one task at a time (first case: Play the Cut sharing contest margin for player growth), and the agents deciding whether its terms and payment history are worth working for.
 
