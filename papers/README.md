@@ -6,7 +6,7 @@ Each entry lives in a category file with a verified citation, link, 2–4 senten
 |---|---|---|
 | Incentive trees & MLM mechanisms | [incentive-trees-mlm.md](incentive-trees-mlm.md) | Emek et al. 2011; Drucker & Fleischer 2012; Lv & Moscibroda 2013/2016; Boner et al. (Deferral) 2023; Reingewertz 2021 |
 | Query incentive networks & branching | [query-incentive-networks.md](query-incentive-networks.md) | Kleinberg & Raghavan 2005; Pickard et al. 2011; Babaioff et al. 2012; Chen et al. 2013; Zhang & Tang 2023 |
-| Sybil resistance | [sybil-resistance.md](sybil-resistance.md) | Douceur 2002; SybilGuard 2006/08; SybilLimit 2008/10; SybilInfer 2009; SybilRank 2012; Viswanath et al. 2010 |
+| Sybil resistance | [sybil-resistance.md](sybil-resistance.md) | Douceur 2002; SybilGuard 2006/08; SybilLimit 2008/10; SybilInfer 2009; SybilRank 2012; Viswanath et al. 2010; AgentValve 2026 (arXiv:2610.12948); Javarone–Leonardos–Ventre 2026 (arXiv:2609.13064) |
 | Fraud & graph anomaly detection | [fraud-graph-anomaly.md](fraud-graph-anomaly.md) | CopyCatch 2013; FRAUDAR 2016; SynchroTrap 2014; Milo et al. 2002 |
 | Profit reallocation & resale trees | [profit-reallocation-resale-trees.md](profit-reallocation-resale-trees.md) | Ma, Xin, Li, Zheng & Deng 2026 (arXiv:2609.33506); Xin et al. TBDS 2025 |
 | Attribution & Shapley-style credit | [attribution-shapley.md](attribution-shapley.md) | Shapley 1953; Shao & Li 2011; Dalessandro et al. 2012; marketing-science referral papers |
@@ -26,4 +26,5 @@ Each entry lives in a category file with a verified citation, link, 2–4 senten
 3. SybilRank + CopyCatch + FRAUDAR: the graph health service's detector stack.
 4. Ma et al. 2026: welfare case for upstream payment.
 5. Vander Nat & Keep: funding source, not depth, is the legal line.
-6. Bryan–Karlan–Zinman + Kellett–Tran–Li + RepuLink (decayed endorser penalties) + PoH/Ethos: sponsor liability — skiplisting today rewards the referrer; see [referrer-accountability-design](../overviews/referrer-accountability-design.md).
+6. AgentValve + Javarone et al. 2026: bounded sponsor exposure and cluster forfeiture with vesting/audits, the math behind a referrer-liability ladder.
+7. Bryan–Karlan–Zinman + Kellett–Tran–Li + PoH/Ethos: sponsor liability — skiplisting today rewards the referrer; see [referrer-accountability-design](../overviews/referrer-accountability-design.md).
