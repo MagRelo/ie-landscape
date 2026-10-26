@@ -29,3 +29,11 @@ Verified via Crossref; shorter notes because they're about program design, not t
 - Kumar, Petersen, Leone. *Driving Profitability by Encouraging Customer Referrals: Who, When, and How.* Journal of Marketing 74(5), 2010. <https://doi.org/10.1509/jmkg.74.5.001>: which customers to target for referral.
 - Leduc, Jackson, Johari. *Pricing and Referrals in Diffusion on Networks.* Games and Economic Behavior 104, 2017. <https://doi.org/10.1016/j.geb.2017.05.011>: optimal referral incentives vs. pricing in network diffusion.
 - **Implication for referralTree:** Guidance on eligibility and two-sided rewards; none of it addresses multilevel Sybil resistance.
+
+## Recent (2026)
+
+### Paying for Information, Not for Clicks: A Block-Level Publisher Content Marketplace for AI Answers
+- **Citation:** M. Mobius, L. Braghieri, S. Eichmeyer, D. G. Goldstein, N. Immorlica, O. Kiss, R. Levy, B. Lucier, I. Mahajan, J. Qiu, T. Rosenblat, D. M. Rothschild, A. Sari, A. Slivkins, C. Watson. *Paying for Information, Not for Clicks: A Block-Level Publisher Content Marketplace for AI Answers.* arXiv:2610.30324 (v1, 21 Oct 2026).
+- **Link:** <https://arxiv.org/abs/2610.30324> (verified on arXiv)
+- **Summary:** Proposes paying publishers for the distinct facts ("lego blocks") used in AI-generated answers. Three payment rules (equal sharing among everyone who reported a block, rewarding whoever reported it first, and rewarding indispensable contributions) are each written as a Shapley-value variant. On answers to 1,974 search queries about one heavily covered news episode, the rules give nearly identical allocations when attribution only sees the articles retrieved for each query, but diverge once a global index of the whole corpus reveals overlap: premium publishers get 42% of value under equal sharing vs 46–50% under first-publication (authors' figures).
+- **Implication for referralTree:** "Reward whoever got there first" is a legitimate Shapley-family rule, which is a principled way to describe the early-mover advantage Matt wants to keep. Their key finding is that the choice of rule only matters, and can only be audited, when there is a shared global record of who contributed what and when; referralTree's on-chain edges with timestamps are exactly that record, so say so in positioning.
