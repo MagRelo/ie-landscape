@@ -8,6 +8,7 @@
 | Layer3 | Crypto quests | No | Yes (rewards) | $16.6M 2024 revenue (Alea) | [quests](crypto-quest-platforms.md) |
 | Galxe | Crypto quests | No | Yes (rewards) | 36M users, ~1M DAU (self-reported) | [quests](crypto-quest-platforms.md) |
 | Fuul | On-chain referral infra | Yes (R1–R4) | Yes | $2M+ paid (site, unverified) | [infra](onchain-referral-infra.md) |
+| Orderly multilevel affiliate | On-chain referral infra (perp DEX) | Yes (≤15, differential rates) | Per-trade from builder fees | none public | [infra](onchain-referral-infra.md) |
 | ShareMint | On-chain referral infra | No | Yes | (unverified) | [infra](onchain-referral-infra.md) |
 | Attrace | On-chain referral infra | (unverified) | Yes | n/a | [infra](onchain-referral-infra.md) |
 | ThunderCore referral-solidity | Library | Yes (3) | Yes (native) | OSS | [infra](onchain-referral-infra.md) |
