@@ -35,3 +35,9 @@ How to pay people along a recruitment tree, and what properties (Sybil-proofness
 - **Link:** <https://doi.org/10.1371/journal.pone.0253700> (verified via Crossref)
 - **Summary:** Economic model of MLM participation and earnings, examining how recruitment-based compensation shapes outcomes for participants at different positions. Useful empirical/theoretical counterweight to purely mechanism-design treatments.
 - **Implication for referralTree:** Supports the early-position-advantage concern and the need for payout-by-generation metrics in LightForest project records.
+
+### Optimizing e-referral reward programs in the presence of uncertain conversion rate
+- **Citation:** Y. Feng, Y. Duan, J. Xu, Y. Qin. *Optimizing e-referral reward programs in the presence of uncertain conversion rate.* Humanities and Social Sciences Communications, published 31 Oct 2026.
+- **Link:** <https://doi.org/10.1057/s41599-026-09551-4> (verified via Crossref; abstract read on nature.com)
+- **Summary:** Single-level consumer model comparing three firm strategies: ignore referrals, allow referrals without reward, or pay a referral reward. Conversion-rate uncertainty drives behavior. Ignoring referrals can beat unrewarded referrals when consumers' psychological cost of a failed recommendation is high; paying rewards is optimal only when the discount on perceived value is high and that psychological cost is moderate.
+- **Implication for referralTree:** Minor. Models referrers' own cost of a bad recommendation, the informal version of referrer accountability: adding penalties on top raises that cost, so too much liability can push referrers to stop recommending at all.

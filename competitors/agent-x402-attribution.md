@@ -20,6 +20,12 @@ Referral/attribution for machine-to-machine payments. This is where LightForest'
 - **Traction:** x402 is a Coinbase-originated standard; adoption figures not verified here.
 - **vs referralTree:** attribution *tagging* (who drove this tx), not payout. Complementary: an ERC-8021 code could be the evidence an oracle uses to sign `rewardRoots`, and facilitator metadata gives a trusted place to carry it.
 
+### x402 multi-payee splits on the `exact` scheme (spec PR #3221, merged 2026-10-26)
+- **What:** optional extension letting one x402 payment be split atomically across the merchant and up to **8** extra recipients in a single transaction, "for platform fees, revenue sharing, referral commissions, and fee-payer cost recovery". <https://github.com/x402-foundation/x402/pull/3221> (merged 2026-10-26 20:39 UTC). Adapted from the splits model in the Solana Charge Intent draft (<https://paymentauth.org/draft-solana-charge-00.html>).
+- **Mechanism:** the resource server lists `extra.splits` (absolute amounts in base units, not bps); the primary `payTo` gets the remainder, which must be > 0. Each leg must be a distinct on-chain transfer; split legs must match exactly, and any client overpayment goes to the merchant, never to a split recipient. Facilitators advertise `maxSplits` (absent = 0) and must reject requirements above it. Spec-only and SVM (Solana) first, with a network-agnostic note in `scheme_exact.md`; as of 2026-11-02 the SDK implementation (PR #3968, TS/Go/Python) and Sui version (PR #4062) are still open.
+- **Traction:** spec merged; no implementation released yet.
+- **vs referralTree:** x402 can now pay a referral commission *inside* the payment, atomically, which closes the gap Split402 left (its MVP doesn't split atomically). But splits are flat, fixed amounts chosen by the merchant, with no tree, no decay, and a cap of 8 extra legs: fewer than a full depth-10 `rewardRoots` path plus the trigger. The natural integration is one split leg paying a referralTree contract (or LightForest group) that then fans out the multilevel share, so x402 carries the money and referralTree carries the rule.
+
 ### Related x402 affiliate experiments (not tracked in depth)
 - x402aff (<https://github.com/MiroShark/x402aff>): routes x402 `payTo` to a per-builder 0xSplits contract (default 10% builder share).
 - Toll402 bounty (<https://toll402.dev/bounty>): 30% of referred agent spend paid on-chain at settlement.

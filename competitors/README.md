@@ -11,10 +11,12 @@
 | ShareMint | On-chain referral infra | No | Yes | (unverified) | [infra](onchain-referral-infra.md) |
 | Attrace | On-chain referral infra | (unverified) | Yes | n/a | [infra](onchain-referral-infra.md) |
 | ThunderCore referral-solidity | Library | Yes (3) | Yes (native) | OSS | [infra](onchain-referral-infra.md) |
+| BULK referral + invite slots | On-chain referral infra (perp DEX) | Yes (2: 10% / 1%) | Weekly USDC | $1.668B cumulative perp volume, $7.11M TVL (DefiLlama, 2026-11-02) | [infra](onchain-referral-infra.md) |
 | Deferral | Academic implementation | Yes (equal split) | Yes (custodial) | research | [infra](onchain-referral-infra.md) |
 | Split402 | Agent / x402 | No | Deferred batches | n/a | [agent](agent-x402-attribution.md) |
 | IETF AREF (draft-stone-aref-00) | Agent spec | Yes (any depth) | Escrow-based | draft -00 | [agent](agent-x402-attribution.md) |
 | x402 builder codes / ERC-8021 | Attribution tagging | n/a | n/a | PR #3666 merged 2026-10-06 | [agent](agent-x402-attribution.md) |
+| x402 multi-payee splits | Agent payment splits | No (flat, ≤8 extra legs) | Yes (atomic, SVM spec) | spec merged 2026-10-26 | [agent](agent-x402-attribution.md) |
 | edgeX referral upgrade | Recent signal | No (3 rate tiers) | Daily claim | n/a | [signals](recent-signals.md) |
 | Engy (SN53) | Recent signal | No | USDC or credits | n/a | [signals](recent-signals.md) |
 | Pump.fun Callout Rewards | Recent signal | No | Yes (USDC daily) | ~$15M budget | [signals](recent-signals.md) |
