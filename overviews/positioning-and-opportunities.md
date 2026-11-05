@@ -11,6 +11,7 @@
 |---|---|---|
 | Fuul | Multilevel affiliate SaaS, platform-run attribution | Compete on verifiability and open math; learn from their cross-project codes |
 | Layer3 / Galxe | Quests and distribution | Integrate: their verified actions can trigger `rewardRoots` |
+| Orderly multilevel affiliate | 15-level top-down differential commissions for perp DEXs | Contrast: protocol-fixed bottom-up split (position doesn't decide your share) vs upline-set rates that can squeeze referees |
 | Split402 / AREF / x402 builder codes | Agent attribution plumbing | Be the multilevel payout + health layer that consumes their attribution evidence |
 | Pump.fun / SayGM / Xyper | Live incentive programs | Contrast: public rule vs. secret metric; multilevel vs. pro-rata single level; revenue-funded vs. recruit-a-team |
 | Deferral / ThunderCore | Research / library contracts | Cite; we're the production-shaped, multi-tenant version |
