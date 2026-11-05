@@ -15,6 +15,8 @@
 | Split402 / AREF / x402 builder codes | Agent attribution plumbing | Be the multilevel payout + health layer that consumes their attribution evidence |
 | Pump.fun / SayGM / Xyper | Live incentive programs | Contrast: public rule vs. secret metric; multilevel vs. pro-rata single level; revenue-funded vs. recruit-a-team |
 | Deferral / ThunderCore | Research / library contracts | Cite; we're the production-shaped, multi-tenant version |
+| BULK | Two-level fee referral with volume-earned invite slots | Contrast on depth and settlement; borrow the slot idea for the per-code child cap |
+| x402 multi-payee splits | Atomic flat splits inside an agent payment (≤8 legs) | Integrate: one split leg funds a referralTree payout so x402 carries the money and referralTree carries the multilevel rule |
 
 ## Opportunities
 1. **Sybil-aware calculator variants.** `setRewardCalculator` already allows swapping. Implement one Drucker–Fleischer-style and one finder-heavy (Chen et al.) rule; compare attack ROI in `simulation/`.
