@@ -2,7 +2,7 @@
 
 Newest first. One file per Monday digest; template in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
-- [2026-11-11](2026-11-11.md): Trust Zones (The Synthesis hackathon) filed under papers — agent agreement substrate, not a peer-reviewed paper
+- [2026-11-11](2026-11-11.md): new `current-work/` section; Trust Zones and The Synthesis (event + tracks/winners) filed there, not under papers
 - [2026-11-02](2026-11-02.md): x402 atomic multi-payee splits (spec); Goyal–Doshi–Nath order-dependent reward sharing (NeurIPS); Sybil-proof adaptive clinching; FTC v. Amway pro-rata upline haircut; BULK two-level referral with invite slots
 - [2026-10-26](2026-10-26.md): Orderly 15-level differential multilevel affiliate; Mobius et al. first-publisher Shapley payment rules; Gatta et al. identity-reset cost and reputation cash-out
 - [2026-10-19](2026-10-19.md): AgentValve capacity-bounded Sybil payments; Javarone–Leonardos–Ventre cluster forfeiture + vesting; edgeX tiered referral; Engy SN53

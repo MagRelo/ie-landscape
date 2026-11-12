@@ -1,6 +1,6 @@
 # Papers index
 
-Each entry lives in a category file with a verified citation, link, 2–4 sentence summary and an **Implication for referralTree** line. Hackathon projects and other non-paper artifacts are labeled as such. Anything not independently verified is marked **(unverified)**.
+Each entry lives in a category file with a verified citation, link, 2–4 sentence summary and an **Implication for referralTree** line. Anything not independently verified is marked **(unverified)**. In-flight builds (hackathon projects, prototypes, open-source repos) live in [current-work/](../current-work/README.md), not here.
 
 | Category | File | Papers |
 |---|---|---|
@@ -12,7 +12,6 @@ Each entry lives in a category file with a verified citation, link, 2–4 senten
 | Attribution & Shapley-style credit | [attribution-shapley.md](attribution-shapley.md) | Shapley 1953; Shao & Li 2011; Dalessandro et al. 2012; marketing-science referral papers; Mobius et al. 2026 (arXiv:2610.30324); Goyal–Doshi–Nath 2026 temporal cooperative games (NeurIPS, arXiv:2510.11255) |
 | MLM, pyramid & legal | [mlm-pyramid-legal.md](mlm-pyramid-legal.md) | Vander Nat & Keep 2002; Keep & Vander Nat 2014; FTC v. Amway stipulated order 2026 |
 | Referrer accountability & social collateral | [referrer-accountability-social-collateral.md](referrer-accountability-social-collateral.md) | Karlan et al. 2009; Besley & Coate 1995; Bryan–Karlan–Zinman; Beaman & Magruder 2012; Kellett–Tran–Li 2010; Wu & Konstantinidis 2026 (RepuLink, KDD); Cheng & Friedman 2005 |
-| Agent agreement protocols (hackathon / artifacts) | [agent-agreements.md](agent-agreements.md) | Trust Zones (Graham / The Synthesis, 2026; not a peer-reviewed paper) |
 
 ## Backlog (carried over from earlier briefs, not yet verified or filed)
 - Liu & Zhu 2022, airdrop Sybil behavior, arXiv:2209.04603 **(unverified)**
