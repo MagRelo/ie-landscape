@@ -18,6 +18,7 @@
 | IETF AREF (draft-stone-aref-00) | Agent spec | Yes (any depth) | Escrow-based | draft -00 | [agent](agent-x402-attribution.md) |
 | x402 builder codes / ERC-8021 | Attribution tagging | n/a | n/a | PR #3666 merged 2026-10-06 | [agent](agent-x402-attribution.md) |
 | x402 multi-payee splits | Agent payment splits | No (flat, ≤8 extra legs) | Yes (atomic, SVM spec) | spec merged 2026-10-26 | [agent](agent-x402-attribution.md) |
+| Binance Sub-Affiliate | Recent signal (CEX) | Yes (≤7 levels, ≤50 per team, differential rates) | No (Binance pays directly) | none public (launched 2026-11-09) | [signals](recent-signals.md) |
 | edgeX referral upgrade | Recent signal | No (3 rate tiers) | Daily claim | n/a | [signals](recent-signals.md) |
 | Engy (SN53) | Recent signal | No | USDC or credits | n/a | [signals](recent-signals.md) |
 | Pump.fun Callout Rewards | Recent signal | No | Yes (USDC daily) | ~$15M budget | [signals](recent-signals.md) |

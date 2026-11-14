@@ -16,7 +16,7 @@ At minimum, when X is skiplisted for cause, X's referrer should not receive X's 
 
 ## Who gets penalized, and how far it spreads
 
-Every production system surveyed (Proof of Humanity, Ethos, Lobsters, Polkadot, EigenLayer) punishes the **direct sponsor only**. Recommended default:
+Every production system surveyed (Proof of Humanity, Ethos, Lobsters, Polkadot, EigenLayer) punishes the **direct sponsor only**; the exception found so far is Binance Sub-Affiliate (Nov 2026), whose terms let it zero a whole team's commissions at its discretion when one member is restricted (see precedents below). Recommended default:
 
 | Who | Penalty |
 |---|---|
@@ -68,6 +68,7 @@ Frame it as **vouching / sponsorship integrity** (PoH / Ethos language). Keep pe
 
 - **Pro-rata upline haircut (FTC v. Amway, 2026).** The stipulated order cuts every upline's credit from a participant by the same proportion that participant's own credit is cut when their real customer sales fall below 70% of volume, and gives uplines no credit for a recruit's unsold purchases in the first six months ([papers entry](../papers/mlm-pyramid-legal.md)). That is a regulator-written, non-decaying cousin of option (c): scale upline pay down when downline volume isn't real, rather than slash a bond. It also gates recruiting: no enrolling anyone until you've made sales to three real customers. Using fraud-only triggers (as recommended above) keeps referralTree away from performance-based "downline management", but this order shows regulators expect upline pay to fall when downline activity isn't real.
 - **Invite capacity earned through your own activity (BULK, Oct 2026).** BULK's referral link has finite invite slots and refills one slot per $100K of the referrer's *own* volume ([competitors entry](../competitors/onchain-referral-infra.md)). Combined with the per-code child cap idea in issue #12, this is a cheap first rung on the penalty ladder: freezing invite rights (step 1) means simply not refilling slots.
+- **Team-wide downside and a team cap at an exchange (Binance Sub-Affiliate, Nov 9, 2026).** Binance's new 7-level Sub-Affiliate program caps a team at 50 Sub-Affiliates, keeps the team's total payout within the Top Affiliate's rate, and lets Binance cut commissions to zero "where another participant in your team is restricted for compliance reasons", plus claw back commissions earned through breaches ([competitors entry](../competitors/recent-signals.md)). That is a production case where downside reaches past the direct sponsor, which updates the "direct sponsor only" finding above. It is discretionary, not a published rule, which is the gap a published decayed penalty fills.
 
 ## Open questions
 
