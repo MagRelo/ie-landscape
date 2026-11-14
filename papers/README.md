@@ -1,6 +1,6 @@
 # Papers index
 
-Each entry lives in a category file with a verified citation, link, 2–4 sentence summary and an **Implication for referralTree** line. Anything not independently verified is marked **(unverified)**.
+Each entry lives in a category file with a verified citation, link, 2–4 sentence summary and an **Implication for referralTree** line. Anything not independently verified is marked **(unverified)**. In-flight builds (hackathon projects, prototypes, open-source repos) live in [current-work/](../current-work/README.md), not here.
 
 | Category | File | Papers |
 |---|---|---|
