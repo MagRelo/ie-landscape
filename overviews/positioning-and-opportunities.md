@@ -16,6 +16,7 @@
 | Pump.fun / SayGM / Xyper | Live incentive programs | Contrast: public rule vs. secret metric; multilevel vs. pro-rata single level; revenue-funded vs. recruit-a-team |
 | Deferral / ThunderCore | Research / library contracts | Cite; we're the production-shaped, multi-tenant version |
 | BULK | Two-level fee referral with volume-earned invite slots | Contrast on depth and settlement; borrow the slot idea for the per-code child cap |
+| x402-mesh | One-hop vendor-to-vendor referral carried inside the 402 response, atomic 2-way split on Base | Borrow the per-token `jti` + event-reconciled split and the `act_chain` lineage claim as evidence for agent-triggered `rewardRoots`; contrast on depth |
 | x402 multi-payee splits | Atomic flat splits inside an agent payment (≤8 legs) | Integrate: one split leg funds a referralTree payout so x402 carries the money and referralTree carries the multilevel rule |
 
 ## Opportunities
