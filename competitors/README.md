@@ -17,7 +17,9 @@
 | Split402 | Agent / x402 | No | Deferred batches | n/a | [agent](agent-x402-attribution.md) |
 | IETF AREF (draft-stone-aref-00) | Agent spec | Yes (any depth) | Escrow-based | draft -00 | [agent](agent-x402-attribution.md) |
 | x402 builder codes / ERC-8021 | Attribution tagging | n/a | n/a | PR #3666 merged 2026-10-06 | [agent](agent-x402-attribution.md) |
+| x402-mesh (StartupHub.ai) | Agent / x402 | No (one hop, vendor→vendor) | Atomic 2-way splitter on Base (no deployed address published) | 7 stars; npm 9 downloads/month | [agent](agent-x402-attribution.md) |
 | x402 multi-payee splits | Agent payment splits | No (flat, ≤8 extra legs) | Yes (atomic, SVM spec) | spec merged 2026-10-26 | [agent](agent-x402-attribution.md) |
+| RISEx Referral V2 | Recent signal (perp DEX) | No (direct only; 4–15% by 30-day referred volume) | Weekly claim to platform balance | none public (live 2026-11-12) | [signals](recent-signals.md) |
 | Binance Sub-Affiliate | Recent signal (CEX) | Yes (≤7 levels, ≤50 per team, differential rates) | No (Binance pays directly) | none public (launched 2026-11-09) | [signals](recent-signals.md) |
 | edgeX referral upgrade | Recent signal | No (3 rate tiers) | Daily claim | n/a | [signals](recent-signals.md) |
 | Engy (SN53) | Recent signal | No | USDC or credits | n/a | [signals](recent-signals.md) |
