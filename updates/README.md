@@ -3,6 +3,7 @@
 Newest first. One file per Monday digest; template in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 
+- [2026-11-23](2026-11-23.md): AI-assistant referrals mostly arrive untracked (Iannelli & Ai); x402 real usage is small: $274K settled in Oct 2026, 0.083% of Base USD to listed sellers (Fireblocks, SonarX); identity amortization Sybil cost (backfill); ERC-8021 site domain lapse
 - [2026-11-16](2026-11-16.md): Braid progressive Sybil-resistant identity (CCS '26); x402-mesh in-payment agent referral with atomic Base splitter (backfill); RISEx Referral V2 single-level 30-day-volume tiers
 - [2026-11-11](2026-11-11.md): new `current-work/` section; Trust Zones and The Synthesis (event + tracks/winners) filed there, not under papers
 - [2026-11-09](2026-11-09.md): Binance 7-level Sub-Affiliate (50-per-team cap, team-wide downside); Anduin x402 payment-graph Sybil-resistant reputation (Circle Research); bilinear Sybil cost in identities and time
